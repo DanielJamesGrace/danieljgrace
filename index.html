@@ -1,39 +1,88 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr. Daniel J. Grace</title>
+
 <style>
 body{
-font-family: Arial, sans-serif;
-max-width: 900px;
-margin:auto;
-padding:40px;
-line-height:1.8;
+margin:0;
+font-family:Georgia, serif;
 background:#f5f5f5;
+color:#222;
+line-height:1.8;
 }
 
 header{
+background:#0f172a;
+color:white;
 text-align:center;
-padding:30px;
+padding:80px 20px;
 }
 
-h1{
-color:#1f3a5f;
+header h1{
+font-size:56px;
+margin:0;
+}
+
+header p{
+font-size:22px;
+color:#d1d5db;
+}
+
+nav{
+background:white;
+text-align:center;
+padding:15px;
+border-bottom:1px solid #ddd;
+}
+
+nav a{
+text-decoration:none;
+color:#1e3a5f;
+margin:0 15px;
+font-weight:bold;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
 }
 
 .section{
 background:white;
-padding:25px;
-margin:20px 0;
+margin-bottom:30px;
+padding:30px;
 border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-a{
-color:#0d6efd;
-text-decoration:none;
-} </style>
+h2{
+color:#1e3a5f;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#f8f8f8;
+padding:20px;
+border-left:4px solid #caa44d;
+border-radius:6px;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+</style>
 
 </head>
 
@@ -41,45 +90,116 @@ text-decoration:none;
 
 <header>
 <h1>Dr. Daniel J. Grace</h1>
-<p><strong>Research • Journalism • Theology</strong></p>
+<p>Author • Journalist • Researcher • Theologian</p>
 </header>
 
-<div class="section">
-<h2>About Me</h2>
+<nav>
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#books">Books</a>
+<a href="#project">Seven Churches</a>
+<a href="#media">Media</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<div class="section" id="about">
+<h2>About</h2>
 
 <p>
-Welcome to my official website.
-I am an author, journalist, and researcher with interests in theology,
-church history, biblical studies, faith, society, and contemporary issues.
+Welcome to the official website of Dr. Daniel J. Grace.
 </p>
 
 <p>
-My work includes articles, books, educational resources, and public commentary
-designed to make complex subjects accessible to a broad audience.
+Author, journalist, researcher, and theological writer exploring Christian history,
+biblical studies, church history, faith, society, and contemporary issues.
 </p>
+
 </div>
 
-<div class="section">
+<div class="section" id="research">
+
+<h2>Research Areas</h2>
+
+<div class="grid">
+
+<div class="card">Biblical Studies</div>
+
+<div class="card">Early Christianity</div>
+
+<div class="card">Church History</div>
+
+<div class="card">Christian Theology</div>
+
+<div class="card">Faith & Society</div>
+
+<div class="card">Religious Journalism</div>
+
+</div>
+
+</div>
+
+<div class="section" id="project">
+
+<h2>Featured Project</h2>
+
+<h3>The Seven Churches of Revelation</h3>
+
+<p>
+A research project exploring Ephesus, Smyrna, Pergamum,
+Thyatira, Sardis, Philadelphia, and Laodicea.
+</p>
+
+</div>
+
+<div class="section" id="books">
+
 <h2>Books & Publications</h2>
 
-<p>Articles, research papers, books, and theological publications.</p>
+<ul>
+<li>The Seven Churches of the Bible</li>
+<li>God Is Able</li>
+<li>I Love God</li>
+<li>Research Articles and Essays</li>
+</ul>
+
 </div>
 
-<div class="section">
-<h2>Media & Social Platforms</h2>
+<div class="section" id="media">
 
-<p><a href="https://youtube.com/@danielgrace01">YouTube Channel</a></p>
+<h2>Media & Platforms</h2>
 
-<p><a href="https://x.com/drdanieljgrace">X / Twitter</a></p>
+<p>
+<a href="https://youtube.com/@danielgrace01">YouTube Channel</a>
+</p>
 
-<p><a href="https://substack.com">Substack</a></p>
+<p>
+<a href="https://open.substack.com/pub/drdanieljgrace">Substack</a>
+</p>
+
+<p>
+<a href="https://x.com/drdanieljgrace">X / Twitter</a>
+</p>
+
 </div>
 
-<div class="section">
+<div class="section" id="contact">
+
 <h2>Contact</h2>
 
-<p>Email: danielgrace30@aol.com</p>
+<p>
+<a href="mailto:danielgrace30@aol.com">danielgrace30@aol.com</a>
+</p>
+
 </div>
+
+</div>
+
+<footer>
+© 2026 Dr. Daniel J. Grace<br>
+Research • Journalism • Theology
+</footer>
 
 </body>
 </html>
