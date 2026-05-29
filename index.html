@@ -3,130 +3,250 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Daniel J. Grace</title>
+<title>Dr. Daniel J. Grace | Research • Journalism • Theology</title>
 
 <style>
 body{
-margin:0;
-font-family:Georgia,serif;
-background:#f5f5f5;
-color:#222;
+  margin:0;
+  font-family:Georgia,"Times New Roman",serif;
+  background:#f3f3f3;
+  color:#222;
+  line-height:1.7;
 }
 
 header{
-background:#0f172a;
-color:white;
-text-align:center;
-padding:60px 20px;
+  background:#0f172a;
+  color:white;
+  text-align:center;
+  padding:70px 20px;
 }
 
 .logo{
-width:180px;
-border-radius:50%;
-border:4px solid white;
+  width:190px;
+  height:190px;
+  border-radius:50%;
+  object-fit:cover;
+  border:5px solid white;
+  margin-bottom:25px;
+}
+
+header h1{
+  font-size:52px;
+  margin:0;
+}
+
+header p{
+  font-size:21px;
+  margin-top:12px;
+}
+
+nav{
+  background:white;
+  text-align:center;
+  padding:18px;
+  border-bottom:1px solid #ddd;
+}
+
+nav a{
+  display:inline-block;
+  margin:6px;
+  padding:10px 18px;
+  background:#1e3a5f;
+  color:white;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover{
+  background:#caa44d;
+  color:#111;
 }
 
 .container{
-max-width:1000px;
-margin:auto;
-padding:30px;
+  max-width:1100px;
+  margin:auto;
+  padding:45px 20px;
 }
 
 .section{
-background:white;
-padding:25px;
-margin-bottom:20px;
-border-radius:10px;
+  background:white;
+  padding:35px;
+  margin-bottom:30px;
+  border-radius:14px;
+  box-shadow:0 3px 12px rgba(0,0,0,0.08);
+}
+
+h2{
+  color:#1e3a5f;
+  border-bottom:2px solid #caa44d;
+  padding-bottom:8px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:18px;
+}
+
+.card{
+  background:#f8f8f8;
+  padding:20px;
+  border-left:5px solid #caa44d;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+.quote{
+  text-align:center;
+  font-size:22px;
+  font-style:italic;
+  color:#444;
+}
+
+.button-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.button-list a{
+  display:inline-block;
+  background:#1e3a5f;
+  color:white;
+  padding:12px 20px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.button-list a:hover{
+  background:#caa44d;
+  color:#111;
+}
+
+a{
+  color:#1e3a5f;
 }
 
 footer{
-background:#0f172a;
-color:white;
-text-align:center;
-padding:20px;
+  background:#0f172a;
+  color:white;
+  text-align:center;
+  padding:40px;
+  margin-top:40px;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
+  <img src="daniel logo.png" class="logo" alt="Dr. Daniel J. Grace Logo">
 
-<img src="daniel logo.png" class="logo">
-
-<h1>Dr. Daniel J. Grace</h1>
-
-<p>Author • Journalist • Researcher • Theologian</p>
-
+  <h1>Dr. Daniel J. Grace</h1>
+  <p>Author • Journalist • Researcher • Theologian</p>
+  <p>Research • Journalism • Theology</p>
 </header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#project">Seven Churches</a>
+  <a href="#books">Books</a>
+  <a href="#media">Media</a>
+  <a href="#contact">Contact</a>
+</nav>
 
 <div class="container">
 
-<div class="section">
-<h2>About</h2>
-<p>
-Welcome to the official website of Dr. Daniel J. Grace.
-</p>
-</div>
+  <div class="section">
+    <p class="quote">
+      Exploring faith, history, theology, and the Christian heritage of the world.
+    </p>
+  </div>
 
-<div class="section">
-<h2>Research Areas</h2>
+  <div class="section" id="about">
+    <h2>About</h2>
+    <p>
+      Dr. Daniel J. Grace is an author, journalist, researcher, and theological writer whose work explores Christian history, biblical studies, early Christianity, church history, faith, and contemporary society.
+    </p>
+    <p>
+      Through books, articles, research projects, and digital media, he seeks to make historical and theological knowledge accessible to a wider audience.
+    </p>
+  </div>
 
-<ul>
-<li>Biblical Studies</li>
-<li>Early Christianity</li>
-<li>Church History</li>
-<li>Christian Theology</li>
-<li>Faith and Society</li>
-</ul>
+  <div class="section" id="research">
+    <h2>Research Areas</h2>
 
-</div>
+    <div class="grid">
+      <div class="card">Biblical Studies</div>
+      <div class="card">Early Christianity</div>
+      <div class="card">Church History</div>
+      <div class="card">Christian Theology</div>
+      <div class="card">Faith and Society</div>
+      <div class="card">Religious Journalism</div>
+    </div>
+  </div>
 
-<div class="section">
-<h2>The Seven Churches of Revelation</h2>
+  <div class="section" id="project">
+    <h2>Featured Project</h2>
+    <h3>The Seven Churches of Revelation</h3>
+    <p>
+      A research and writing project exploring the history, geography, archaeology, theology, and biblical significance of the Seven Churches mentioned in the Book of Revelation.
+    </p>
 
-<ul>
-<li>Ephesus</li>
-<li>Smyrna</li>
-<li>Pergamum</li>
-<li>Thyatira</li>
-<li>Sardis</li>
-<li>Philadelphia</li>
-<li>Laodicea</li>
-</ul>
+    <div class="grid">
+      <div class="card">Ephesus</div>
+      <div class="card">Smyrna</div>
+      <div class="card">Pergamum</div>
+      <div class="card">Thyatira</div>
+      <div class="card">Sardis</div>
+      <div class="card">Philadelphia</div>
+      <div class="card">Laodicea</div>
+    </div>
+  </div>
 
-</div>
+  <div class="section" id="books">
+    <h2>Books & Publications</h2>
+    <ul>
+      <li><strong>The Seven Churches of the Bible</strong></li>
+      <li><strong>God Is Able</strong></li>
+      <li><strong>I Love God</strong></li>
+      <li>Christian research articles</li>
+      <li>Theological essays and commentary</li>
+    </ul>
+  </div>
 
-<div class="section">
-<h2>Media & Platforms</h2>
+  <div class="section" id="media">
+    <h2>Media & Platforms</h2>
 
-<p><a href="https://youtube.com/@danielgrace01">YouTube</a></p>
-<p><a href="https://open.substack.com/pub/drdanieljgrace">Substack</a></p>
-<p><a href="https://x.com/drdanieljgrace">X / Twitter</a></p>
-<p><a href="https://www.linkedin.com/in/dr-daniel-james-grace/">LinkedIn</a></p>
-<p><a href="https://bsky.app/profile/danieljamesgrace.bsky.social">Bluesky</a></p>
-<p><a href="https://www.instagram.com/danieljamesgrace04/">Instagram</a></p>
-<p><a href="https://www.facebook.com/faithprayingod">Facebook</a></p>
+    <div class="button-list">
+      <a href="https://youtube.com/@danielgrace01">YouTube</a>
+      <a href="https://open.substack.com/pub/drdanieljgrace">Substack</a>
+      <a href="https://x.com/drdanieljgrace">X / Twitter</a>
+      <a href="https://www.linkedin.com/in/dr-daniel-james-grace/">LinkedIn</a>
+      <a href="https://bsky.app/profile/danieljamesgrace.bsky.social">Bluesky</a>
+      <a href="https://www.instagram.com/danieljamesgrace04/">Instagram</a>
+      <a href="https://www.facebook.com/faithprayingod">Facebook</a>
+      <a href="https://github.com/DanielJamesGrace">GitHub</a>
+    </div>
+  </div>
 
-</div>
+  <div class="section" id="contact">
+    <h2>Contact</h2>
 
-<div class="section">
-<h2>Contact</h2>
-
-<p>
-<a href="mailto:dnljmsgrc@aol.com">dnljmsgrc@aol.com</a>
-</p>
-
-</div>
+    <div class="button-list">
+      <a href="mailto:dnljmsgrc@aol.com">Email: dnljmsgrc@aol.com</a>
+    </div>
+  </div>
 
 </div>
 
 <footer>
-
-Dr. Daniel J. Grace<br>
-Research • Journalism • Theology
-
+  <h3>Dr. Daniel J. Grace</h3>
+  <p>Research • Journalism • Theology</p>
+  <p>© 2026 All Rights Reserved</p>
 </footer>
 
 </body>
